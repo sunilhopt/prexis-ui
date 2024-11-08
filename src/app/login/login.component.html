@@ -1,0 +1,69 @@
+<div class="p-4 login-page-background" id="loginpage">
+    <div>
+        <span class="search">
+            <!-- Hopt.ai | Democratising AI -->
+            <svg width="416" height="23" xmlns="http://www.w3.org/2000/svg">
+                <text x="10" y="18" font-family="Arial, sans-serif" font-size="22" fill="white">
+                    Hopt.ai | Democratising AI
+                </text>
+            </svg>
+
+        </span>
+        <span class="login-user" *ngIf="userLoggedIn"> <img src="{{photoURL}}" class="rounded-circle img-fluid"
+                alt="User Profile Image" width="44" height="44">
+        </span>
+    </div>
+    <div>
+        <p class="csm">
+            Hopt.ai - for Marketers
+        </p>
+    </div>
+    <div>
+        <p class="demo">
+            Demo
+            <!-- Hopt.ai Demo Overview -->
+        </p>
+    </div>
+    <div>
+        <p class="userJourney">
+            User Journey | Architecture Diagram | Platform Console Walkthrough
+        </p>
+        <div class="Line8"
+            style="margin-left:75px;margin-top:16px; width: 862px; height: 0px; border: 1px #838383 solid"></div>
+    </div>
+    <div>
+        <p class="desc">
+            This demo showcases Hopt.ai, an AI-driven platform designed to empower marketers by automating their entire
+            campaign lifecycle—from strategic planning and creative development to performance measurement—leveraging
+            the power of generative AI specifically built for marketing.
+
+            <br><br>
+
+            This demo is intended for internal teams and prospective customers to demonstrate the capabilities of
+            Hopt.ai’s marketing automation platform.
+            Please note that this is an MVP (Minimum Viable Product) and is currently in an continuous evolution phase.
+            Currently demo is develop on test data. As the product evolves, it will be refined and enhanced based
+            on user feedback.
+            <br><br>
+
+            We welcome your feedback and suggestions regarding the tool. Hopt.ai may use any feedback provided without
+            restriction and without obligation to you.
+            <br><br>
+            
+            Your use of the tool must comply with our Terms of Service, including any applicable
+            Acceptable Use Policies.            
+        </p>
+    </div>
+    <div>
+        <p class="check">
+            <input class="checkboxCss" type="checkbox" (change)="checkboxChecked($event)" /> By checking this box, you
+            accept and agree to the above
+            terms and conditions of this tool.
+        </p>
+    </div>
+    <div>
+        <button class="acceptButton btn" (click)="navigateToUserJourney()" [disabled]="acceptAndAgreeButton">
+            Accept and Agree
+        </button>
+    </div>
+</div>
